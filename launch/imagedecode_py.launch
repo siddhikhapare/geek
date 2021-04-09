@@ -1,0 +1,16 @@
+<launch>
+  <node
+    pkg="geek"
+    type="Image_server.py"
+    name="Image_server"
+    output="screen"
+  />
+  <node
+    pkg="geek"
+    type="Image_client.py"
+    name="Image_client"
+    output="screen"
+  />
+  <!--<rosparam command="load" file="$(find geek)/config/params.yaml" /> -->
+
+</launch>
